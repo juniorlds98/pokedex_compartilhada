@@ -1,6 +1,4 @@
-body{
-    padding: 0;
-    margin: 0;
+.integrantes{
     background-image: url(../img/walpapers/wallpaperflare.com_wallpaper.jpg);
     background-size: cover;
     background-position: center;
@@ -28,6 +26,7 @@ body{
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
 
 .container-names div:hover {
   transform: translateX(10px); /* anima levemente */

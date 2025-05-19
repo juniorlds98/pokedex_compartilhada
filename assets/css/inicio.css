@@ -1,12 +1,9 @@
-body{
-    padding: 0;
-    margin: 0;
-    background-image: url(../img/walpapers/wallpaperflare.com_wallpaper.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #7FAC71;
-
+.inicio{
+  background-image: url(../img/walpapers/wallpaperflare.com_wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #7FAC71;
 }
 
 .header{
@@ -36,7 +33,7 @@ ul li{
 }
 
 .gif-ash{
-    position: absolute;
+    /*position: absolute;*/
     top: 57%;
     left: 85%;
 }

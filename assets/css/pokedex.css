@@ -1,5 +1,3 @@
-
-
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
@@ -140,4 +138,11 @@
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
 }

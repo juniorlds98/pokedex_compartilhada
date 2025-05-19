@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Css Global-->
     <link rel="stylesheet" href="assets/css/global.css">
+    <!--Css Inicio-->
+    <link rel="stylesheet" href="./assets/css/inicio.css">
+    <!--Css Integrantes-->
+    <link rel="stylesheet" href="./assets/css/integrantes.css">
     <!--Css Pokedex-->
     <link rel="stylesheet" href="assets/css/pokedex.css">
     <!--Fonte Roboto-->
@@ -21,21 +25,83 @@
 
 </head>
 <body>
+    <header>
+        <div class="header">
+            <div class="hamburger" onclick="toggleMenu()">
+            ☰
+            </div>
+            <nav class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li>Início</li>
+                    <li>Integrantes</li>
+                    <li>Pokémons</li>
+                    <li>Cartas</li>
+                </ul>
+            </nav>
+            <div class="title">
+                <h3>CP3</h3>
+            </div>
+            <div class="title-items">
+                <ul class="lista-items">
+                    <li>Inicio</li>
+                    <li>Integrantes</li>
+                    <li>Pokemons</li>
+                    <li>Cartas</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="content inicio">
+        <main class="items">
+            <img src="./assets/img/gifs/dacytqk-34dc4bfd-fcdb-4551-924c-23bdfb66a911.gif" class="gif-ash" alt="">
+            <div class="principal">
+                <h1>Projeto Pokedex</h1>
+            </div>
+            <div>
+                <button class="start">Start</button>
+            </div>
+        </main>
+    </section>
+
+    <section class="content integrantes">
+        <h2 class="title">
+            <h2>Choose your character</h2>
+        </h2>
+        <main>
+            <div class="container-names">
+                <div>
+                    <h2>Caio Martinez Saes - RM: 560131</h2>
+                </div>
+                <div>
+                    <h2>José Claudio da Silva Junior - RM: 559680</h2>
+                </div>
+            </div>
+        </main>
+    </section>
+
     <section class="content pokedex">
-        <h1>Pokedex</h1>
         <ol class="pokemons" id="pokemons">
 
         </ol>
     </section>
-        <section class="content pokedex">
+
+    <section class="content pokedex">
         <h1>Habilidades</h1>
-        <h2>pokemon</h2>
-        <select class="form-select" id="pokemons-selection"></select>
+        <div class="formulario">
+            <h2>pokemon</h2>
+            <select class="form-select" id="pokemons-selection"></select>
+    
+            <h2>Habilidades</h2>
+            <select class="form-select" id="habili1"></select>
+            <select class="form-select" id="habili2"></select>
+        </div>
 
-        <h2>Habilidades</h2>
-        <select class="form-select" id="habili1"></select>
-        <select class="form-select" id="habili2"></select>
 
+    </section>
+
+    <section class="content footer">
+        <footer></footer>
     </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
