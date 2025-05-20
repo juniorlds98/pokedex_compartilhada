@@ -1,7 +1,11 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    padding: 0;
+    margin: 0;
 }
-
+body{
+    overflow-x: hidden;
+}
 .content {
     padding: 1rem;
 }
@@ -26,8 +30,12 @@
 }
 
 @media screen and (min-width: 992px){
-    .content {
-        max-width: 992px;
-        margin: 0 auto;
-    }
 }
+
+
+.content{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+}
+

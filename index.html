@@ -9,33 +9,114 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Css Global-->
     <link rel="stylesheet" href="assets/css/global.css">
+    <!--Css Inicio-->
+    <link rel="stylesheet" href="./assets/css/inicio.css">
+    <!--Css Integrantes-->
+    <link rel="stylesheet" href="./assets/css/integrantes.css">
     <!--Css Pokedex-->
     <link rel="stylesheet" href="assets/css/pokedex.css">
     <!--Fonte Roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
 </head>
 <body>
+    <header>
+        <div class="header">
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+            <nav class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li>Início</li>
+                    <li>Integrantes</li>
+                    <li>Pokémons</li>
+                    <li>Cartas</li>
+                </ul>
+            </nav>
+            <div class="title">
+                <h3>CP3</h3>
+            </div>
+            <div class="title-items">
+                <ul class="lista-items">
+                    <li>Inicio</li>
+                    <li>Integrantes</li>
+                    <li>Pokemons</li>
+                    <li>Cartas</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="content inicio">
+        <main class="items">
+            <img src="./assets/img/gifs/dacytqk-34dc4bfd-fcdb-4551-924c-23bdfb66a911.gif" class="gif-ash" alt="">
+            <div class="principal">
+                <h1>Projeto Pokedex</h1>
+            </div>
+            <div>
+                <button class="start">Start</button>
+            </div>
+        </main>
+    </section>
+
+    <section class="content integrantes">
+
+        <main>
+            <div class="title">
+                <h2>Choose your character</h2>
+            </div>
+            <div class="container-names">
+                <div>
+                    <h2>Caio Martinez Saes- RM: 560131</h2>
+                </div>
+                <div>
+                    <h2>José Claudio da Silva Junior - RM: 559680</h2>
+                </div>
+            </div>
+        </main>
+    </section>
+    <div class="title-pokemons">
+        <h3>Pokemons</h3>
+    </div>
     <section class="content pokedex">
-        <h1>Pokedex</h1>
         <ol class="pokemons" id="pokemons">
 
         </ol>
     </section>
-        <section class="content pokedex">
+
+    <section class="content pokedex">
         <h1>Habilidades</h1>
-        <h2>pokemon</h2>
-        <select class="form-select" id="pokemons-selection"></select>
-
-        <h2>Habilidades</h2>
-        <select class="form-select" id="habili1"></select>
-        <select class="form-select" id="habili2"></select>
-
+        <div class="formulario">
+            <h2>pokemon</h2>
+            <select class="form-select" id="pokemons-selection"></select>
+    
+            <h2>Habilidades</h2>
+            <select class="form-select" id="habili1"></select>
+            <select class="form-select" id="habili2"></select>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="todo-footer">
+            <div class="title-footer">
+                <h2>Aprenda mais sobre o mundo Pokemon</h2>
+            </div>
+            <div class="section-footer">
+                <div class="text-1">
+                    <p>1° Ano de Engenharia de Software</p>
+                    <p>FIAP - Paulista</p>
+                    <p>São Paulo - SP</p>
+                </div>
+                <div class="text-2">
+                    <p>Telefone:(11)99494-1817</p>
+                    <p>Email: rm559680@fiap.com.br</p>
+                </div>
+        </div>
     </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -46,6 +127,6 @@
 <!--bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
+<script src="script.js"></script>
 
 </html>

@@ -1,11 +1,10 @@
-
-
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
     list-style: none;
     padding: 0;
     margin: 0;
+    overflow-y: scroll;
 }
 .pokemon {
     margin: .5rem;
@@ -140,4 +139,11 @@
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
 }
