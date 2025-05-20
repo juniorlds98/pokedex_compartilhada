@@ -101,6 +101,62 @@
             <select class="form-select" id="habili2"></select>
         </div>
     </section>
+    <section class="content cartas">
+    <div class="title-cartas">
+        <h3>Crie sua Carta Pokémon!</h3>
+    </div>
+    <div class="carta-container">
+        <div class="formulario-carta">
+            <form id="formCarta">
+                <div class="form-group">
+                    <label for="pokemon-carta">Pokémon:</label>
+                <select class="form-select rounded-15" id="pokemon-carta" name="pokemon-carta">
+                    <option value="">Selecione um Pokémon</option>
+                    <option value="1">Bulbasaur</option>
+                    <option value="4">Charmander</option>
+                    <option value="7">Squirtle</option>
+                    <option value="25">Pikachu</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label for="categoria-carta">Categoria:</label>
+                    <select class="form-select rounded-15" id="categoria-carta" name="categoria-carta">
+                        <option value="">Selecione a Categoria</option>
+                        <option value="planta">Planta</option>
+                        <option value="fogo">Fogo</option>
+                        <option value="agua">Água</option>
+                        <option value="eletrico">Elétrico</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nome-ataque">Nome do Ataque:</label>
+                    <input type="text" class="form-control rounded-15 input-lg" id="nome-ataque" name="nome-ataque">
+                </div>
+                <div class="form-group">
+                    <label for="poder-ataque">Poder do Ataque:</label>
+                    <input type="number" class="form-control rounded-15 input-lg" id="poder-ataque" name="poder-ataque">
+                </div>
+                <button type="submit" class="btn-criar-carta">Criar Carta</button>
+            </form>
+        </div>
+
+        <div class="carta-preview">
+            <div class="carta">
+                <div class="carta-header">
+                    <h4 id="pokemon-nome-carta"></h4>
+                    <span id="pokemon-categoria-carta"></span>
+                </div>
+                <div class="carta-imagem">
+                    <img id="pokemon-imagem-carta" src="" alt="Imagem do Pokémon">
+                </div>
+                <div class="carta-body">
+                    <h5 id="ataque-nome-carta"></h5>
+                    <p>Poder: <span id="ataque-poder-carta"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <section class="footer">
         <div class="todo-footer">
             <div class="title-footer">
@@ -124,9 +180,10 @@
 <script src="assets/js/pokemon-model.js"></script>
 <script src="assets/js/poke-api.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/carta.js"></script>
 <!--bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-<script src="script.js"></script>
+
 
 </html>
