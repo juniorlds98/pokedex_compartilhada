@@ -1,5 +1,5 @@
 .integrantes{
-    background-image: url(../img/walpapers/wallpaperflare.com_wallpaper.jpg);
+    background-image: url(../img/walpapers/Pokemon-Pokedex.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,8 +9,8 @@
 
 .container-names{
     background-color: #FFF;
-    width: 500px;
-    height: 250px;
+    width: 700px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     border: black solid 5px;
@@ -22,24 +22,30 @@
 
 .container-names div {
   position: relative;
-  padding-left: 30px; /* espaço para a seta */
+  padding-left: 50px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 
 .container-names div:hover {
-  transform: translateX(10px); /* anima levemente */
+  transform: translateX(10px);
 }
 
 .container-names div::after {
-  content: '➡'; /* ou '→' */
+  content: "";
+  background-image: url(../img/walpapers/1976606-200.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
   opacity: 0;
   transition: opacity 0.3s ease;
+  display: block;
 }
 
 .container-names div:hover::after {
@@ -49,6 +55,8 @@
 header{
     display: flex;
     justify-content: center;
+    width: 100%;
+    display: block;
 }
 
 main{

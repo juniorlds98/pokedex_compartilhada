@@ -1,7 +1,4 @@
-
-
 const pokeApi = {}
-
 
 
 function processNumber(number) {

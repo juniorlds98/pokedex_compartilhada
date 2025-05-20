@@ -99,4 +99,6 @@ pokeApi.getPokemons(0, 151).then(pokemons => {
         // Atualiza Select2
         $('#habili1, #habili2').select2()
     })
+
+    
 })
